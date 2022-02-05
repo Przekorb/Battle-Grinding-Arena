@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="Battle Grind Arena">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Battle Grinding Arena</title>
+<link rel="stylesheet" href="style.css">
+<script src="player.js"></script>
+<script src="gamemanager.js"></script>
+<script src="enemy.js"></script>
+<script src="item.js"></script>
+<script src="compareitems.js"></script>
+<script src="changestatistics.js"></script>
+<script src="colourinventory.js"></script>
+<script src="calculateexperience.js"></script>
+<script src="changebars.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="skill.js"></script>
+</head>
+<body>
+<h1>Battle Grinding Arena</h1>
+<div class="header">
+<h2>Choose your character</h2>
+</div>
+
+<div class="playerinterface"id="playerinterface">
+    <div class="interface">
+        <a href="#" onclick="GameManager.setGameStart('Berserker')">
+            <img src="avatar-player/berserker.jpg" id="startimage" alt="berserker">
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Paladin')">
+            <img src="avatar-player/paladin.jpg" id="startimage" alt="paladin">
+        </a>
+            <a href="#" onclick="GameManager.setGameStart('Mage')">
+            <img src="avatar-player/mage.jpg" id="startimage" alt="mage" >    
+        </a>
+    </div>
+    <div class="equipment">
+
+    </div>
+</div>
+<div class="actions">
+
+
+</div>
+<div id ="arena" class="scoreboard">
+
+    <div id ="scoreboardcontainer" class="scoreboardcontainer fade-in">
+    
+    <div id="scoreboardtitlecontainer">
+            <p id="scoreboardtitle">Scoreboard</p>
+    </div>
+    
+    <div id="scoreboard1">
+        <p id="scoreboardnumber"></p>
+        <p>Class:</p>
+        <p>Experience:</p>
+    </div>
+    <div id="scoreboard2">
+        <p id="scoreboardnumber"></p>
+        <p>Class:</p>
+        <p>Experience:</p>
+    </div>
+
+    </div>
+
+</div>
+<div class="enemy">
+
+    
+</div>
+</body>
+</html>
